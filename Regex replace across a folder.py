@@ -1,4 +1,4 @@
-``` python
+
 import os
 
 # specify the path to the vault's folder
@@ -15,4 +15,3 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
             updated_contents = contents.replace("\\Master's%20thesis\\", "\\Masters%20thesis\\")
             with open(filepath, 'w') as f:
                 f.write(updated_contents)
-```
