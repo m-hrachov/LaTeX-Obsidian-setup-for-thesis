@@ -1,33 +1,3 @@
-# Extract article info from an Obsidian folder
-
-``` python
-# titles into a csv
-import os
-import csv
-import requests
-import re
-
-note_dir = "D:/Obsidian vaults/Masters thesis/Literature"  # replace with the path to your vault directory
-
-titles = []
-
-# loop through all the files in the directory
-for filename in os.listdir(note_dir):
-    if filename.endswith(".md"):  # assuming the notes are in markdown format
-        with open(os.path.join(note_dir, filename), "r") as f:
-            lines = f.readlines()
-            # search for the title line and extract the title string
-            for i in range(1, len(lines)):
-                if lines[i].startswith("**Title**: "):
-                    titles.append(lines[i][11:].strip())  # extract the title string and remove any whitespace
-        
-# print the titles
-print(titles)
-
-with open("D:/Python projects/Citations/titles.csv", "w", newline="") as f: writer = csv.writer(f) for title in titles: writer.writerow([title])
-```
-
-``` python
 # ----------------------------------------------------------------
 #             DOI to .bib references from Obsidian notes.
 # Custom scrip created by m-hrachov.
@@ -149,4 +119,4 @@ with open("D:/Python projects/Citations/citations_modified.bib", "w") as f:
 # LaTeX project folder and linked to the citation system
 
 # end
-```
+
