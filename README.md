@@ -65,12 +65,12 @@ Note: internal link is useful if `.pdf` files are being kept on the local PC. Bu
 have to be replaced with `%20`.
 
 ### .bib literature
-Literature file `.bib` is updated when running the python code presented in the `Code.md` file for collecting DOIs from the Literature 
+Literature file `.bib` is updated when running the python code presented in the `Code.py` file for collecting DOIs from the Literature 
 folder and writing .bib file.
 This code is:
 1. Iteratively opens and reads every file in the "Literature" folder.
-2. Finds a DOI link of the format "http/https", and cleans tail characters `\);,` in case other DOI links are present in the file 
-(it is never worse to have them all and use only some).
+2. Finds a DOI link of the format "http/https", and cleans tail characters `\);,`. In case other DOI links are present in the file 
+it will catch them all (it is never worse to have them all and use only some).
 3. Extracts the DOI suffix.
 4. Can write them in `.csv` if needed.
 5. Links to Crossref to extract the full `bib` citation.
