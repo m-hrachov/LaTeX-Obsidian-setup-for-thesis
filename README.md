@@ -47,7 +47,6 @@ body {
 
 ### Literature template
 
-> [!Info]
 > Update needed! A better way of templating a literature page would be setting up a proper YAML header. 
 > The complete Python extraction pipeline must then also be changed, but this is worth a try
 > since if the information is condensed in the YAML header, one could use the DataView plugin for in-Obsidian summaries.
