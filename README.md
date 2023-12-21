@@ -1,33 +1,27 @@
-# LaTeX-Obsidian-RStudio-setup-for-thesis
-This repository provides a custom setup for writing a thesis using LaTeX distribution edited as `.rnw` in Rstudio and Obsidian notes as a 
-manager of literature.
+# LaTeX-Obsidian setup for thesis
+This repository provides a custom setup for writing a thesis using LaTeX distribution edited as `.tex` in a LaTeX editor and Obsidian notes as a 
+literature manager.
 
 ## LaTeX
 LaTeX is a type-setting system. More details at [https://www.latex-project.org/](https://www.latex-project.org/). It is widely available.
-In this setup, RStudio build-in `Sweave` functionality is utilized to work with Latex. 
+Latex templates can be loaded into different LaTeX editors.
 
-Latex template can be loaded into other than RStudio Latex editors. Overleaf can be used otherwise, since it provides much better 
-user-friendly functionality (but has a limit of processing time for free subscribers). Therefore to avoid any paywalls, further R
-Studio will be used.
-
-Please fill in both template forms (title file and thesis file) in order to use auto input where needed. 
-Title file is created separately, and has to be run independently before running thesis file. A separate title is done to avoid 
+Please fill in both template forms (title file and thesis file) to use auto input where needed. 
+Title file is created separately, and has to be run independently before running the thesis file. A separate title is done to avoid 
 problems with the page count.
-(It is anyway created normally once and then kept as it is, except the date. The date is automatically updated to the actual date.)
+(It is created normally once and then kept as it is, except for the date. The date is automatically updated to the actual date when the file is re-run.)
 
 ## Obsidian
-[Obsidian](https://obsidian.md/) is a customizable markdown-based editor. For more information visit official website 
+[Obsidian](https://obsidian.md/) is a customizable markdown-based editor. For more information visit the official website 
 (https://obsidian.md/)[https://obsidian.md/].
 
 Below is my setup.
 
 ### Plugins
 Custom setup includes community plugins:
-- Advanced Tables (Excel-like navigation and experience)
 - Better Word Count (with disabled standard word count in "Core plugins")
 - Editing Toolbar
 - File Color
-- Notion-like tables
 - Regex Find/Replace
 
 ### CSS
@@ -52,10 +46,16 @@ body {
 ```
 
 ### Literature template
-Literature template is one of the most important parts of literature research pipeline. Template example:
+
+> [!Info]
+> Update needed! A better way of templating a literature page would be setting up a proper YAML header. 
+> The complete Python extraction pipeline must then also be changed, but this is worth a try
+> since if the information is condensed in the YAML header, one could use the DataView plugin for in-Obsidian summaries.
+
+A literature template is one of the most important parts of the literature research pipeline. Template example:
 
 This is a basic `template` functionality in Obsidian. In a new folder named `Templates` create a file with the desired template.
-Then in a new file, use `Alt+T` to inser the desired template. Done!
+Then in a new file, use `Alt+T` to insert the desired template. Done!
 
 1. It is convenient to keep a separate folder with all the literature. 
 2. It is convenient to have a `Title` field in the template.
@@ -77,15 +77,10 @@ it will catch them all (it is never worse to have them all and use only some).
 6. Saves as `.bib` file.
 
 
-## RStudio
-RStudio is a popular IDE for R programming language. More details at the [developer's webpage](https://posit.co/download/rstudio-desktop/).
+## TeX Studio
 
-RStudio provides `Sweave` functionality to work with LaTeX files in a familiar way.
-
-`tinytex` is an R package which alone takes care for loading required Latex libraries, and file compilation. 
-Therefore enable "Use tinytex when compiling .tex files" in "Sweave" options. 
-
-Important: Sweave should be chosen to weave Rnw files, and pdfLaTeX to typeset LaTeX into PDF. 
-R version doesn't play a great role. Was tested with R 4.2.3.
+TeX Studio is a free software for editing and compiling LaTeX files. This software is similar to the basic Overleaf but doesn't require 
+Internet connection. This software allows to use `biber` backend and `apa` style for academic writing. 
+You can access this software via the link [https://www.texstudio.org/](https://www.texstudio.org/).
 
 Good luck!
