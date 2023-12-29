@@ -1,20 +1,16 @@
+Note created: 
+
+```
+---
+Title: 
+Year: 
+Authors: []
+DOI: 
+General topic: 
+Relation to a project: []
+Tags: []
 Note created: {{date}}, {{time}} 
+---
+```
 
-**Title**:
-**Year**: 
-[External Link]()
-[Internal Link]()
-
-## Main points
-
-## Main figures
-
-## Other notes
-
-
-#literature
-#idea 
-#methodology
-#must-read
-#otherinfo
-
+# Main points of the article 
