@@ -1,6 +1,3 @@
-Note created: 
-
-```
 ---
 Title: 
 Year: 
@@ -11,6 +8,5 @@ Relation to a project: []
 Tags: []
 Note created: {{date}}, {{time}} 
 ---
-```
 
 # Main points of the article 
